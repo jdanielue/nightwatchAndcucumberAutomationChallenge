@@ -1,0 +1,18 @@
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 9516
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1672849903.540][INFO]: [87aa257cc24bb829e27412838159fe25] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1672849903.683][INFO]: [87aa257cc24bb829e27412838159fe25] RESPONSE InitSession ERROR unknown error: cannot find Chrome binary
+[1672849903.683][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1672849903.683][DEBUG]: Log type 'browser' lost 0 entries on destruction

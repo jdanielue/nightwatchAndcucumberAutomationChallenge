@@ -1,0 +1,24 @@
+{
+  "name": "nightwatchandcucumberautomationchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge/issues"
+  },
+  "homepage": "https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge#readme",
+  "devDependencies": {
+    "chromedriver": "^108.0.0",
+    "nightwatch": "^2.6.5"
+  }
+}
