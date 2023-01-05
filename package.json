@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require tests --format node_modules/cucumber-pretty",
+    "e2e-test": "cucumber-js --require cucumber.conf.js --require step_definitions --format node_modules/cucumber-pretty"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,9 @@
   "homepage": "https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge#readme",
   "devDependencies": {
     "chromedriver": "^108.0.0",
-    "nightwatch": "^2.6.5"
+    "cucumber": "^6.0.7",
+    "cucumber-pretty": "^6.0.1",
+    "nightwatch": "^1.7.13",
+    "nightwatch-api": "^3.0.2"
   }
 }
