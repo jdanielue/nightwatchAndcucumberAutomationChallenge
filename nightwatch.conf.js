@@ -1,6 +1,8 @@
 const chromedriver = require('chromedriver');
 
+
 module.exports = {
+  page_objects_path: ["pages"],
   test_settings: {
     default: {
       launch_url: 'https://www.saucedemo.com/',
