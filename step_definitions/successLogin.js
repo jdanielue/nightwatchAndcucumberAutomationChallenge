@@ -6,11 +6,11 @@ Given(/^the user joins the Swag labs page home page$/, () => {
 });
 
 Then(/^the user is "([^"]*)"$/, userName => {
-  return client.expect.element('#login_credentials > h4').text.to.equals(userName);
+  return client.expect.element('#login_credentials').text.to.contain(userName);
 });
 
-Then(/^the password label for all users exists$/, () => {
-  return client.expect.element('.login_password').to.be.present;
+Then(/^the password label is "([^"]*)"$/, userPassword => {
+  return client.expect.element('.login_password').text.to.contain(userPassword);
 });
 
 Given(/the user is on the homepage "([^"]*)"$/, (homepageURL) => {
@@ -20,12 +20,14 @@ Given(/the user is on the homepage "([^"]*)"$/, (homepageURL) => {
 When(/^the user types the username "([^"]*)"$/, userName => {
   return client
   .waitForElementVisible('#user-name')
+  .clearValue('#user-name')
   .setValue('#user-name', userName);
 });
 
 When(/^the user types the password "([^"]*)"$/, password => {
   return client
   .waitForElementVisible('#password')
+  .clearValue('#password')
   .setValue('#password', password);
 });
 
@@ -35,4 +37,8 @@ When(/^the user clicks on submit$/, () => {
 
 Then(/^the user joins the inventory page "([^"]*)"$/, inventoryURL => {
   return client.expect.url().to.contain(inventoryURL);
+});
+
+Then(/^the user sees the error message "([^"]*)"$/, errorMessage => {
+  return client.expect.element('h3').text.to.equal(errorMessage);
 });

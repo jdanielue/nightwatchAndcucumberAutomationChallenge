@@ -1,9 +1,9 @@
 const chromedriver = require('chromedriver');
 
 module.exports = {
- //tests is a folder in workspace which has the step definitions
   test_settings: {
     default: {
+      launch_url: 'https://www.saucedemo.com/',
       webdriver: {
         start_process: true,
         server_path: chromedriver.path,
