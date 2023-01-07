@@ -8,13 +8,13 @@ SauceDemo should work, you should first explore it manually using the standard_u
 user allows you to see how the application should work. Then you should log in with the
 problem_user. This will allow you to see a SauceDemo full of bugs.
 ## Scope
-With the standard_user, the expected flows that should be automated are:
+### With the standard_user, the expected flows that should be automated are:
 1. Log In
 2. Log Out
 3. Add an item to Cart
 4. Remove an item from the Cart
 5. Checkout an item in the Cart
-With the problem_user, the expected flows that should be automated are:
+### With the problem_user, the expected flows that should be automated are:
 1. Log In
 2. Log Out
 3. Add an item to Cart

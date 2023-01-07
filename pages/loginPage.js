@@ -7,7 +7,7 @@ const elements =  {
   errorText: 'h3',
 }
 
-const loginUserFunc = function loginUser(client, userName, password) {
+const loginUserFunc = (client, userName, password) => {
 
   return client
   .init().waitForElementVisible('body', 1000)
