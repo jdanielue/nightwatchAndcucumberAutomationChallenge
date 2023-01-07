@@ -1,10 +1,10 @@
+const shoppingCartElements = require('./shoppingCartPage')
+
 const elements = {
   hamburgerButton : '#react-burger-menu-btn',
   logoutButton : '#logout_sidebar_link',
   homepageURL : 'https://www.saucedemo.com',
   shoppingCart : '#shopping_cart_container > a',
-  cartTitle : '#header_container > div.header_secondary_container > span',
-  carTitleLabel : 'YOUR CART'
 }
 
 const logoutUserFunc = function loginUser(client) {
@@ -21,9 +21,8 @@ const logoutUserFunc = function loginUser(client) {
 const clickShoppingCar = (client) => {
   return client
   .waitForElementVisible('body', 1000)
-  .waitForElementVisible(elements.shoppingCart)
   .click(elements.shoppingCart)
-  .expect.element(elements.cartTitle).text.to.equal(elements.carTitleLabel);
+  .expect.element(shoppingCartElements.elements.cartTitle).text.to.equal(shoppingCartElements.elements.carTitleLabel);
 }
 
 module.exports = {
