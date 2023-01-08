@@ -5,6 +5,9 @@ const elements = {
   logoutButton : '#logout_sidebar_link',
   homepageURL : 'https://www.saucedemo.com',
   shoppingCart : '#shopping_cart_container > a',
+  sauceLabsBackPack : '#add-to-cart-sauce-labs-backpack',
+  removeSauceLabsBackPack : '#remove-sauce-labs-backpack',
+  shoppingCartCounter : '#shopping_cart_container > a > span'
 }
 
 const logoutUserFunc = function loginUser(client) {
