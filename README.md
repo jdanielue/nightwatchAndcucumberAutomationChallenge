@@ -1,4 +1,6 @@
-## Automation Challenge
+# Automation Challenge
+
+## Description
 In this challenge you will automate some flows in the SauceDemo application
 (https://www.saucedemo.com/). SauceDemo is an app where you can practice your testing and
 automation skills. It’s a small shopping page where you can add items to a cart, remove them,
@@ -33,3 +35,11 @@ You have one week from the moment you receive this document to solve the challen
 Questions are allowed, so feel free to ask anything you need. Once you are ready to deliver
 your solution, upload it to a public github repository where we can review your code. Give the
 Github URL to the recruiter who gave you this challenge.
+
+## Installation
+
+``` npm init ``
+
+##  How to Use?
+
+``` npm run e2e-test```
