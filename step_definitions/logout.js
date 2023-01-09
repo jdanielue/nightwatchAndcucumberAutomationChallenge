@@ -3,8 +3,8 @@ const {Given, When, Then} = require('cucumber');
 let { loginUserFunc } = require("../pages/loginPage.js");
 const { elements } = require('../pages/inventoryPage.js');
 
-Given(/^the user is logged$/, () => {
-  return loginUserFunc(client, "standard_user", "secret_sauce").
+Given(/^the user is logged with the credentials "([^"]*)" and "([^"]*)"$/, (username, password) => {
+  return loginUserFunc(client, username, password).
   expect.element('#header_container > div.header_secondary_container > span').text.to.equal('PRODUCTS');
 });
 
