@@ -9,7 +9,10 @@ Scenario Outline: the user is able to acces the checkout page - step 2
   When the user is on the checkout page 2 "https://www.saucedemo.com/checkout-step-two.html"
   Then the user is able to see the same product that selected on the shopping cart "Sauce Labs Backpack"
 
-  
+  Examples:
+| username | password |
+| standard_user  | secret_sauce  |
+| problem_user  | secret_sauce  |
 
 Scenario Outline: the user fill the First name, last Name and Postal code
   Given the user is logged with the credentials "<username>" and "<password>"
