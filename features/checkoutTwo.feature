@@ -9,9 +9,14 @@ Scenario Outline: the user is able to acces the checkout page - step 2
   When the user is on the checkout page 2 "https://www.saucedemo.com/checkout-step-two.html"
   Then the user is able to see the same product that selected on the shopping cart "Sauce Labs Backpack"
 
+@standard
   Examples:
 | username | password |
 | standard_user  | secret_sauce  |
+
+@problem
+  Examples:
+| username | password |
 | problem_user  | secret_sauce  |
 
 Scenario Outline: the user fill the First name, last Name and Postal code
@@ -24,7 +29,12 @@ Scenario Outline: the user fill the First name, last Name and Postal code
   When the user clicks on the finish button
   Then the user is redirected to the complete page "https://www.saucedemo.com/checkout-complete.html"
 
-Examples:
+@standard
+  Examples:
 | username | password |
 | standard_user  | secret_sauce  |
+
+@problem
+  Examples:
+| username | password |
 | problem_user  | secret_sauce  |

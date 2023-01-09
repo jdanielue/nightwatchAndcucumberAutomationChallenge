@@ -10,7 +10,12 @@ Feature: Swag Labs - complete
   When the user is on the complete page "https://www.saucedemo.com/checkout-complete.html"
   Then the user is able to see the gratitude message "THANK YOU FOR YOUR ORDER"
 
-Examples:
+@standard
+  Examples:
 | username | password |
 | standard_user  | secret_sauce  |
+
+@problem
+  Examples:
+| username | password |
 | problem_user  | secret_sauce  |

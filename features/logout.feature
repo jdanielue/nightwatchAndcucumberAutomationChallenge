@@ -7,7 +7,12 @@ Scenario Outline: the user is able to successfully logout
   And the user clicks on the logout button
   Then the user is redirected to the homepage "https://www.saucedemo.com"
 
-Examples:
+@standard
+  Examples:
 | username | password |
 | standard_user  | secret_sauce  |
+
+@problem
+  Examples:
+| username | password |
 | problem_user  | secret_sauce  |
