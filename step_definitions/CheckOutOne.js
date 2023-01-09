@@ -1,5 +1,5 @@
 const { client } = require('nightwatch-api');
-const {Given, When, Then} = require('cucumber');
+const {Given, When, Then} = require('@cucumber/cucumber');
 const shoppingCart = require('../pages/shoppingCartPage.js');
 const checkOutOnePage = require('../pages/checkoutOnePage.js');
 

@@ -1,5 +1,5 @@
 const { client } = require('nightwatch-api');
-const {Given, When, Then} = require('cucumber');
+const {Given, When, Then} = require('@cucumber/cucumber');
 var loginPage = require("../pages/loginPage.js");
 
 Given(/^the user joins the Swag labs page home page$/, () => {

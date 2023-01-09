@@ -1,5 +1,5 @@
 const { client } = require('nightwatch-api');
-const {Given, When, Then} = require('cucumber');
+const {Given, When, Then} = require('@cucumber/cucumber');
 const completePage = require('../pages/completePage.js');
 
 When(/^the user is on the complete page "([^"]*)"$/, (completePageURL) => {

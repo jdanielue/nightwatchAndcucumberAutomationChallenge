@@ -1,5 +1,5 @@
 const { client } = require('nightwatch-api');
-const {Given, When, Then} = require('cucumber');
+const {Given, When, Then} = require('@cucumber/cucumber');
 const checkOutTwoPage = require('../pages/checkoutTwoPage.js');
 
 Then(/^the user is able to see the same product that selected on the shopping cart "([^"]*)"$/, (productCheckout) => {
