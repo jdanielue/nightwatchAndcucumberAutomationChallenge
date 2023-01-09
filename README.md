@@ -43,4 +43,14 @@ Github URL to the recruiter who gave you this challenge.
 
 ##  How to Use?
 
-``` npm run e2e-test```
+### to run test cases for standard_user
+
+``` e2e-test-standard```
+
+### to run test cases for problem_user
+
+``` e2e-test-problem```
+
+### to run test cases for both users
+
+``` e2e-test```
