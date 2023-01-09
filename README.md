@@ -38,7 +38,7 @@ Github URL to the recruiter who gave you this challenge.
 
 ## Installation
 
-``` npm init ``
+``` npm init ```
 
 ##  How to Use?
 
