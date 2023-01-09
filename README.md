@@ -38,7 +38,7 @@ Github URL to the recruiter who gave you this challenge.
 
 ## Installation
 
-``` git clone https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge ```
+``` git clone https://github.com/jdanielue/nightwatchAndcucumberAutomationChallenge ``` \n
 ``` npm install ```
 
 ##  How to Use?
